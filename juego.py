@@ -71,9 +71,3 @@ class JuegoArchivo(Juego):
         inicio = tuple(map(int, lineas[-2].split()))
         final = tuple(map(int, lineas[-1].split()))
         return inicio, final
-
-# Instancia de JuegoArchivo, cargará un mapa aleatorio desde una carpeta llamada "mapas"
-juego = JuegoArchivo("mapas")
-
-# Iniciar el bucle principal del juego
-juego.main_loop()
