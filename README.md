@@ -23,3 +23,6 @@ Se puede hacer uso de una terminal nativa como el CMD de windows o una instalada
 1. Recibir: mapa List[List[str]], posicion inicial Tuple[int, int], posicion final Tuple[int, int].
 2. Definir dos variavles px y py que contienen las coordenadas del jugador, iniciar como los valores de la posición incial
 3. Procesar mientras (px, py) no coincida con la coordenada final
+
+### POO
+Se encapsulan en clases y se empieza a dividir el codigo para mejorar su escalabilidad

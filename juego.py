@@ -2,6 +2,7 @@ import os
 import time
 import readchar
 import random
+from functools import reduce  # Importar la función reduce
 
 class Juego:
     def __init__(self, mapa, inicio, final):
@@ -10,9 +11,8 @@ class Juego:
         self.final = final
 
     def convertir_mapa(self, mapa_str):
-        mapa_lista = mapa_str.strip().split('\n')
-        mapa = [list(fila) for fila in mapa_lista]
-        return mapa
+        mapa_lista = list(map(list, map(str.strip, mapa_str.strip().split('\n'))))
+        return mapa_lista
 
     def mostrar_mapa(self):
         os.system('cls' if os.name == 'nt' else 'clear')
